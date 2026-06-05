@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #023047;
+    --secondary-color: #219EBC;
+    --accent-color: #FB8500;
+    --background-color: #8ECAE6;
+    --text-color: #FFB703;
+    --first-place-color: #FFD700;
+    --second-place-color: #C0C0C0;
+    --third-place-color: #CD7F32;
+}
+
+@font-face {
+  font-family: "Shadows Into Light";
+  src: url("../fonts/ShadowsIntoLight-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+    font-family: "Shadows Into Light", cursive;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    padding-top: 10px;
+}
+
+.end-of-title {
+    color: red;
+}
+
+#container {
+    margin: auto;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table th {
+    font-size: 1.2em;
+}
+
+table, th, td {
+    padding: 5px 10px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+table input {
+    text-align: center;
+    width: 100px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: "Shadows Into Light", cursive;
+}
+
+#items {
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+}
+
+#items ul {
+    padding: 0;
+    display: inline-block;
+}
+
+.child-name {
+    font-size: 1.3em;
+    font-family: "Shadows Into Light", cursive;
+    color: var(--primary-color);
+    font-variant-caps: small-caps;
+}
+
+#items ul li {
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+    list-style: none;
+    margin: 5px;
+    width: 200px;
+    height: 30px;
+}
+
+#items ul li input {
+    border-radius: 5px;
+    border: 0px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#items ul li.first-place {
+    border: 2px solid var(--first-place-color);
+    color: var(--first-place-color);
+}
+
+#items ul li.second-place {
+    border: 2px solid var(--second-place-color);
+    color: var(--second-place-color);
+}
+
+#items ul li.third-place {
+    border: 2px solid var(--third-place-color);
+    color: var(--third-place-color);
+}

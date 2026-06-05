@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Who's First ?!</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <h1>Who's First <span class="end-of-title">?!</span></h1>
+        <div id="container">
+            <table >
+                <tr>
+                    <th>Number</th>
+                    <th>Randomization Level</th>
+                </tr>
+                <tr>
+                    <td><input id="number_items" aria-label="Number of children" type="number" min="2" value="2" onchange="generate_items()"></td>
+                    <td><input id="random_level" aria-label="Randomization level" type="number" min="1" value="1"></td>
+                </tr>
+            </table>
+            <div id="items">
+            </div>
+            <button class="child-name" onclick="set_result()">Shuffle!</button> <button class="child-name" onclick="reset()">Reset</button>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
